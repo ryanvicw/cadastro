@@ -1,0 +1,31 @@
+img{
+width: 200px;
+}
+table{
+text-align: center;
+margin: auto;
+}
+table tr{
+text-align: center;
+margin: auto;
+border-width: 1px;
+}
+table tr td{
+height: 50px;
+font-size: 40px;
+
+}
+table tr th{
+font-size: 40px;
+}
+table td{
+width: 150px;
+height: auto;
+}
+h1{
+text-align: center;
+}
+.container{
+justify-items: center;
+text-align: center;
+}

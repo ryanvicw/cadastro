@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %} 
+
+{% if alunos %}
+
+
+<table>
+    <tr>
+        <th>Ação</th>
+        <th>nome</th>
+        <th>email</th>
+    </tr>
+    {% for aluno in alunos %}
+    <tr>
+            <td>
+                <a href="{% url 'aluno' id=aluno.id %}" class="btn btn-primary btn-sm">Visualizar</a>
+            </td>
+            <td>{{aluno.nome}}</td>
+            <td>{{aluno.email}}</td>
+
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p>sem alunos</p>
+
+{% endif %}
+{% endblock %}
